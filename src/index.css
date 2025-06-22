@@ -1,0 +1,103 @@
+/* === Base Styling === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+:root {
+  color-scheme: dark;
+  background-color: #121212;
+  color: #ddd;
+  font-family: system-ui, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* === Typography === */
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #121212;
+  color: #ddd;
+  font-family: sans-serif;
+}
+
+p {
+  margin-bottom: 3rem;
+  line-height: 2;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+/* === Links === */
+
+a {
+  color: #4ea1ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Buttons === */
+
+button {
+  border-radius: 8px;
+  border: 1px solid #555;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: #ccc;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #4ea1ff;
+}
+button:focus,
+button:focus-visible {
+  outline: 2px solid #4ea1ff;
+  outline-offset: 2px;
+}
+.download-button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #3a3a3a;
+  border: 1px solid #666;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+}
+.download-button:hover {
+  background-color: #4ea1ff;
+  color: #000;
+  transform: scale(1.05);
+}
+.feature-item {
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.feature-item:hover {
+  background-color: #2a2a2a;
+  transform: scale(1.02);
+}
