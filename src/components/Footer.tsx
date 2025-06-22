@@ -2,14 +2,25 @@ const Footer = () => {
   return (
     <footer style={styles.footer}>
       <span>© 2025 TorServ</span>
-      <a
-        href="https://github.com/torserv/torserv"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={styles.link}
-      >
-        Inspect the code on GitHub
-      </a>
+      <div>
+        <a
+          href="https://github.com/torserv/torserv"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={styles.link}
+        >
+          Inspect the TorServ code
+        </a>{' '}
+        |{' '}
+        <a
+          href="https://github.com/torserv/torserv-web"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={styles.link}
+        >
+          View website source
+        </a>
+      </div>
     </footer>
   );
 };
