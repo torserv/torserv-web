@@ -46,25 +46,27 @@ const styles = {
     margin: '0 auto',
   },
   heading: {
-    fontSize: '1.4rem',
+    fontSize: '1.75rem', // upgraded from 1.4rem
     marginBottom: '1rem',
   },
   subheading: {
-    fontSize: '1.1rem',
+    fontSize: '1.25rem', // upgraded from 1.1rem
     margin: '1rem 0 0.5rem',
   },
   paragraph: {
-    marginBottom: '1rem',
-    lineHeight: 1.6,
+    fontSize: '1.125rem', // upgraded for body text
+    marginBottom: '1.5rem',
+    lineHeight: 1.7,
   },
   code: {
     backgroundColor: '#2a2a2a',
     padding: '0.75rem',
     borderRadius: '4px',
     fontFamily: 'monospace',
+    fontSize: '1.05rem', // slightly larger for readability
     whiteSpace: 'pre-wrap' as const,
-    marginBottom: '1rem',
-    lineHeight: 1.5,
+    marginBottom: '1.25rem',
+    lineHeight: 1.6,
   },
   link: {
     color: '#4ea1ff',

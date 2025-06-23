@@ -28,12 +28,13 @@ const styles = {
     margin: '0 auto',
   },
   heading: {
-    fontSize: '1.4rem',
+    fontSize: '1.75rem', // bigger heading
     marginBottom: '1rem',
   },
   paragraph: {
-    marginBottom: '1rem',
-    lineHeight: 1.6,
+    fontSize: '1.125rem', // bigger body text
+    marginBottom: '1.5rem',
+    lineHeight: 1.7,
   },
   link: {
     color: '#4ea1ff',

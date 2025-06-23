@@ -54,7 +54,7 @@ const styles = {
     margin: '0 auto',
   },
   heading: {
-    fontSize: '1.4rem',
+    fontSize: '1.75rem', // larger heading
     marginBottom: '1rem',
   },
   row: {
@@ -69,8 +69,9 @@ const styles = {
     minWidth: '250px',
   },
   p: {
-    marginBottom: '1rem',
-    lineHeight: 1.6,
+    fontSize: '1.125rem', // larger body
+    marginBottom: '1.5rem',
+    lineHeight: 1.7,
     display: 'block',
   },
   link: {
@@ -83,8 +84,8 @@ const styles = {
     padding: '0.5rem',
     borderRadius: '6px',
     boxShadow: '0 0 12px rgba(0, 0, 0, 0.5)',
-    width: '100%', // ← stretch to card's full width
-    boxSizing: 'border-box' as const, // ensure padding is included
+    width: '100%',
+    boxSizing: 'border-box' as const,
   },
   image: {
     display: 'block',

@@ -121,11 +121,11 @@ const styles = {
     margin: '0 auto',
   },
   heading: {
-    fontSize: '1.4rem',
+    fontSize: '1.75rem', // Bigger section heading
     marginBottom: '1rem',
   },
   groupHeading: {
-    fontSize: '1.1rem',
+    fontSize: '1.25rem', // Subheading size
     color: '#aaa',
     margin: '1rem 0 0.5rem',
   },
@@ -146,24 +146,24 @@ const styles = {
     gap: '0.5rem',
   },
   emoji: {
-    fontSize: '1.2rem',
+    fontSize: '1.4rem', // more visual impact
   },
   summary: {
     flex: 1,
     marginLeft: '0.5rem',
     color: '#ddd',
-    fontSize: '0.975rem',
+    fontSize: '1.125rem', // upgraded from 0.975rem
   },
   toggle: {
     marginLeft: '0.5rem',
     color: '#888',
-    fontSize: '0.8rem',
+    fontSize: '1rem', // bumped slightly
   },
   details: {
     marginTop: '0.5rem',
-    fontSize: '0.9rem',
+    fontSize: '1.1rem', // upgraded from 0.9rem
     color: '#aaa',
-    lineHeight: 1.5,
+    lineHeight: 1.7,
   },
 };
 
