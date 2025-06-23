@@ -22,3 +22,9 @@ To run locally:
 ```bash
 npm install
 npm run dev
+
+---
+
+## 📄 Licensing Notes
+
+This site embeds the Roboto font, which is © Google and licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0). The font is self-hosted for improved privacy.
