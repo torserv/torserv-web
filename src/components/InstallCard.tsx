@@ -1,6 +1,6 @@
 const InstallCard = () => (
   <section style={styles.card}>
-    <h2 style={styles.heading}>Installation & Usage</h2>
+    <h2 style={styles.heading}>💻 Installation & Usage</h2>
 
     <h3 style={styles.subheading}>🐧 Linux (x86_64)</h3>
     <pre style={styles.code}>

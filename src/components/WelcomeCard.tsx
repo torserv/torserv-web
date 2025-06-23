@@ -1,6 +1,6 @@
 const WelcomeCard = () => (
   <section style={styles.card}>
-    <h2 style={styles.heading}>Welcome to TorServ</h2>
+    <h2 style={styles.heading}>🧅 Welcome to TorServ</h2>
 
     <div style={styles.text}>
       <p style={styles.p}>
