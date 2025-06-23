@@ -46,8 +46,15 @@ const styles = {
     margin: '0 auto',
   },
   heading: {
-    fontSize: '1.75rem', // upgraded from 1.4rem
-    marginBottom: '1rem',
+    fontSize: '1.75rem',
+    marginBottom: '1.5rem',
+    position: 'relative' as const,
+    paddingBottom: '0.4rem',
+    borderBottom: '2px solid transparent',
+    backgroundImage: 'linear-gradient(to right, #4ea1ff 0%, transparent 65%)',
+    backgroundPosition: 'bottom left',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: '100% 2px',
   },
   subheading: {
     fontSize: '1.25rem', // upgraded from 1.1rem

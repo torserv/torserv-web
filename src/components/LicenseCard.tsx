@@ -28,8 +28,15 @@ const styles = {
     margin: '0 auto',
   },
   heading: {
-    fontSize: '1.75rem', // bigger heading
-    marginBottom: '1rem',
+    fontSize: '1.75rem',
+    marginBottom: '1.5rem',
+    position: 'relative' as const,
+    paddingBottom: '0.4rem',
+    borderBottom: '2px solid transparent',
+    backgroundImage: 'linear-gradient(to right, #4ea1ff 0%, transparent 65%)',
+    backgroundPosition: 'bottom left',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: '100% 2px',
   },
   paragraph: {
     fontSize: '1.125rem', // bigger body text
