@@ -56,6 +56,9 @@ const GitHubGrowthCard = () => {
 
 const styles = {
   wrapper: {
+    position: 'sticky' as const,
+    top: '110px', // Adjust to height of your header
+    zIndex: 999,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',

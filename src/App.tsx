@@ -2,22 +2,15 @@ import GitHubGrowthCard from './components/GitHubGrowthCard';
 import WelcomeCard from './components/WelcomeCard';
 import InstallCard from './components/InstallCard';
 import CommunityCard from './components/CommunityCard';
-import DownloadButtons from './components/DownloadButtons';
 import Footer from './components/Footer';
 import LicenseCard from './components/LicenseCard';
 import FeaturesCard from './components/FeaturesCard';
+import Header from './components/Header';
 
 function App() {
   return (
     <div style={styles.page}>
-      <header style={styles.header}>
-        <div style={styles.logoRow}>
-          <img src="/onion-small.png" alt="TorServ logo" style={styles.logo} />
-          <h1 style={styles.title}>TorServ</h1>
-          <DownloadButtons />
-        </div>
-      </header>
-
+      <Header />
       <GitHubGrowthCard />
 
       <main style={styles.main}>
