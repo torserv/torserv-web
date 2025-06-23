@@ -3,14 +3,14 @@ const LicenseCard = () => (
     <h2 style={styles.heading}>📝 License</h2>
     <p style={styles.paragraph}>
       TorServ is licensed under the permissive{' '}
-      <a
-        href="https://opensource.org/licenses/MIT"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={styles.link}
-      >
-        MIT License
-      </a>.
+    <a
+      href="https://github.com/torserv/torserv/blob/main/LICENSE"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={styles.link}
+    >
+      MIT License
+    </a>
     </p>
     <p style={styles.paragraph}>
       This software is provided “as is”, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors be liable for any claim, damages, or other liability.
