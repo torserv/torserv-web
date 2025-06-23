@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/roboto-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
 html, body {
   height: 100%;
 }
@@ -46,7 +53,6 @@ h1, h2, h3 {
   margin-bottom: 0.75rem;
   font-weight: 600;
   font-family: 'Roboto', sans-serif;
-  text-shadow: 0 1px 1px #4ea1ff44;
 }
 
 /* === Links === */
