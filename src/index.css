@@ -28,7 +28,12 @@ body {
   min-height: 100vh;
   background-color: #121212;
   color: #ddd;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-feature-settings: 'liga' on, 'kern' on;
+  letter-spacing: 0.15px;
+  word-spacing: 0.1em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 p {
@@ -40,6 +45,8 @@ h1, h2, h3 {
   margin-top: 0;
   margin-bottom: 0.75rem;
   font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 0 1px 1px #4ea1ff44;
 }
 
 /* === Links === */
