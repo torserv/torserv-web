@@ -11,6 +11,18 @@ const GitHubGrowthCard = () => {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    const cacheKey = 'githubRepoStats';
+    const cached = localStorage.getItem(cacheKey);
+
+    if (cached) {
+      const parsed = JSON.parse(cached);
+      const now = Date.now();
+      if (now - parsed.timestamp < 60 * 1000) { // 1 minute cache
+        setStats(parsed.data);
+        return;
+      }
+    }
+
     fetch('https://api.github.com/repos/torserv/torserv')
       .then((res) => {
         if (!res.ok) throw new Error('GitHub API request failed');
@@ -23,7 +35,7 @@ const GitHubGrowthCard = () => {
         const stars = data.stargazers_count;
         const starsPerDay = stars / daysOld;
 
-        setStats({
+        const statsData: RepoStats = {
           stars,
           createdAt: created.toLocaleDateString(undefined, {
             year: 'numeric',
@@ -31,7 +43,10 @@ const GitHubGrowthCard = () => {
             day: 'numeric',
           }),
           starsPerDay: parseFloat(starsPerDay.toFixed(2)),
-        });
+        };
+
+        setStats(statsData);
+        localStorage.setItem(cacheKey, JSON.stringify({ data: statsData, timestamp: Date.now() }));
       })
       .catch((err) => setError(err.message));
   }, []);
@@ -57,7 +72,7 @@ const GitHubGrowthCard = () => {
 const styles = {
   wrapper: {
     position: 'sticky' as const,
-    top: '110px', // Adjust to height of your header
+    top: '110px',
     zIndex: 999,
     display: 'flex',
     justifyContent: 'center',
