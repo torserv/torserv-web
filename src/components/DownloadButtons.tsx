@@ -73,7 +73,7 @@ const styles = {
     gap: '0.5rem',
     justifyContent: 'center',
   },
-    button: {
+  button: {
     padding: '0.6rem 1.2rem',
     fontSize: '1rem',
     fontWeight: 600,

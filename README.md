@@ -15,6 +15,16 @@ Built with React + Vite. Hosted at [https://torserv.org](https://torserv.org).
 
 ---
 
+## 🌐 Onion Mirror
+
+TorServe.org is accessible via the Tor network:
+
+**→ inacxweo5cotzc6mshwq52eul4327ac64xz5q5s4bml62txqot727oyd.onion**
+
+Copy and paste into the [Tor Browser](https://www.torproject.org/) to visit.
+
+---
+
 ## ⚙️ Development
 
 To run locally:
