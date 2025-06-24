@@ -67,19 +67,17 @@ const GitHubGrowthCard = () => {
 
   return (
     <section style={styles.wrapper}>
-      <h2 style={styles.heading}>GitHub Growth</h2>
       {error ? (
         <p style={{ color: 'red' }}>Error: {error}</p>
       ) : stats ? (
-        <>
-          <div style={styles.statsRow}>
-            <span>⭐ {stats.stars} stars</span>
-            <span>🍴 {stats.forks} forks</span>
-            <span>📅 Created: {stats.createdAt}</span>
-            <span>📈 ~{stats.starsPerDay} stars/day</span>
-            <span>👥 Contributors: {stats.contributors.length}</span>
-          </div>
-        </>
+        <div style={styles.statsRow}>
+          <h2 style={styles.heading}>GitHub Growth</h2>
+          <span>⭐ {stats.stars} stars</span>
+          <span>🍴 {stats.forks} forks</span>
+          <span>📅 Created: {stats.createdAt}</span>
+          <span>📈 ~{stats.starsPerDay} stars/day</span>
+          <span>👥 Contributors: {stats.contributors.length}</span>
+        </div>
       ) : (
         <p>Loading GitHub stats...</p>
       )}
@@ -92,18 +90,14 @@ const styles = {
     position: 'sticky' as const,
     top: '110px',
     zIndex: 999,
-    display: 'flex',
-    flexDirection: 'column' as const,
-    alignItems: 'center',
     backgroundColor: '#1a1a1a',
     padding: '1rem 2rem',
     color: '#ccc',
     fontSize: '1rem',
     borderBottom: '1px solid #333',
-    gap: '0.75rem',
   },
   heading: {
-    fontSize: '1.3rem',
+    fontSize: '1.2rem',
     fontWeight: 500,
     margin: 0,
     whiteSpace: 'nowrap',
@@ -111,11 +105,9 @@ const styles = {
   statsRow: {
     display: 'flex',
     gap: '1.5rem',
+    alignItems: 'center',
     flexWrap: 'wrap' as const,
-  },
-  contributors: {
-    fontSize: '0.9rem',
-    color: '#bbb',
+    justifyContent: 'center',
   },
 };
 
