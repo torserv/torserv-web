@@ -3,7 +3,9 @@ import MirrorBadge from './MirrorBadge';
 const WelcomeCard = () => (
   <section style={styles.card}>
     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-      <h2 style={styles.heading}>🧅 Welcome to TorServ</h2>
+      <div style={{ flexGrow: 1 }}>
+        <h2 style={styles.heading}>🧅 Welcome to TorServ</h2>
+      </div>
       <MirrorBadge />
     </div>
 
