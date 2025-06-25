@@ -1,4 +1,8 @@
+import TorServStructuredData from '../components/TorServStructuredData';
+
 const WhyTorServ = () => (
+<>
+  <TorServStructuredData />
   <section style={styles.card}>
     <div style={styles.content}>
       <h2 style={styles.heading}>🛠️ Why I Built TorServ</h2>
@@ -69,6 +73,7 @@ const WhyTorServ = () => (
       <p style={styles.paragraph}>— The TorServ Creator</p>
     </div>
   </section>
+</>
 );
 
 const styles = {

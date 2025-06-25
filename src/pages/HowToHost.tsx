@@ -1,4 +1,9 @@
+import TorServStructuredData from '../components/TorServStructuredData';
+    <TorServStructuredData />
+
 const HowToHost = () => (
+<>        
+  <TorServStructuredData />
   <section style={styles.card}>
     <div style={styles.content}>
       <h2 style={styles.heading}>⚡ Host a Static Website on the Dark Web in Under 1 Minute</h2>
@@ -109,6 +114,7 @@ const HowToHost = () => (
       <p style={styles.paragraph}>— The TorServ Project</p>
     </div>
   </section>
+</>
 );
 
 const styles = {
