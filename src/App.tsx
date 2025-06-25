@@ -5,6 +5,7 @@ import HowToHost from './pages/HowToHost';
 import GitHubGrowthCard from './components/GitHubGrowthCard';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import NotFound from './components/NotFound';
 
 import WelcomeCard from './components/WelcomeCard';
 import FeaturesCard from './components/FeaturesCard';
@@ -30,7 +31,8 @@ function App() {
             </>
           } />
           <Route path="/why-torserv" element={<WhyTorServ />} />
-          <Route path="/howto-host" element={<HowToHost />} /> {/* ✅ Corrected path */}
+          <Route path="/howto-host" element={<HowToHost />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
 
