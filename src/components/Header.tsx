@@ -27,7 +27,7 @@ const styles = {
     top: 0,
     zIndex: 1000,
     width: '100%',
-    height: '110',
+    height: '110px',
     boxSizing: 'border-box' as const,
   },
   row: {
