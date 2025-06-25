@@ -1,7 +1,13 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-})
+  // Vite handles SPA fallback automatically when using plugin-react
+  // But if needed explicitly:
+  build: {
+    rollupOptions: {
+      input: '/index.html',
+    },
+  },
+});
