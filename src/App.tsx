@@ -1,11 +1,16 @@
+import { Routes, Route } from 'react-router-dom';
+import WhyTorServ from './pages/WhyTorServ';
+import HowToHost from './pages/HowToHost';
+
 import GitHubGrowthCard from './components/GitHubGrowthCard';
+import Footer from './components/Footer';
+import Header from './components/Header';
+
 import WelcomeCard from './components/WelcomeCard';
+import FeaturesCard from './components/FeaturesCard';
 import InstallCard from './components/InstallCard';
 import CommunityCard from './components/CommunityCard';
-import Footer from './components/Footer';
 import LicenseCard from './components/LicenseCard';
-import FeaturesCard from './components/FeaturesCard';
-import Header from './components/Header';
 
 function App() {
   return (
@@ -14,12 +19,21 @@ function App() {
       <GitHubGrowthCard />
 
       <main style={styles.main}>
-        <WelcomeCard />
-        <FeaturesCard />
-        <InstallCard />
-        <CommunityCard />
-        <LicenseCard />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <WelcomeCard />
+              <FeaturesCard />
+              <InstallCard />
+              <CommunityCard />
+              <LicenseCard />
+            </>
+          } />
+          <Route path="/why-torserv" element={<WhyTorServ />} />
+          <Route path="/howto-host" element={<HowToHost />} /> {/* ✅ Corrected path */}
+        </Routes>
       </main>
+
       <Footer />
     </div>
   );
@@ -34,16 +48,6 @@ const styles = {
     margin: 0,
     padding: 0,
   },
-  header: {
-    backgroundColor: '#1e1e1e',
-    padding: '1rem 2rem',
-    borderBottom: '1px solid #333',
-  },
-  title: {
-    margin: 0,
-    fontSize: '1.8rem',
-    color: '#fff',
-  },
   main: {
     width: '100%',
     padding: '2rem',
@@ -52,22 +56,6 @@ const styles = {
     flexDirection: 'column' as const,
     alignItems: 'center',
     gap: '1.5rem',
-  },
-  card: {
-    width: '65%',
-    backgroundColor: '#1c1c1c',
-    padding: '1.5rem',
-    borderRadius: '8px',
-    boxShadow: '0 0 10px rgba(0,0,0,0.3)',
-  },
-  logo: {
-    height: '75px',
-    width: 'auto',
-  },
-  logoRow: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '1rem',
   },
 };
 
