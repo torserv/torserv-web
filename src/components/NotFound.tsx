@@ -2,11 +2,6 @@ import React from 'react';
 
 const NotFound = () => (
   <div style={styles.page}>
-    <header style={styles.header}>
-      <img src="/onion-small.png" alt="TorServ logo" style={styles.logo} />
-      <h1 style={styles.title}>TorServ</h1>
-    </header>
-
     <main style={styles.main}>
       <h2 style={styles.heading}>404 – This Onion’s Gone Missing</h2>
       <p style={styles.paragraph}>
