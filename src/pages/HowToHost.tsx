@@ -1,5 +1,4 @@
 import TorServStructuredData from '../components/TorServStructuredData';
-    <TorServStructuredData />
 
 const HowToHost = () => (
 <>        
@@ -13,7 +12,7 @@ const HowToHost = () => (
       </p>
 
       <p style={styles.paragraph}>
-        This guide shows you how to go from zero to a live <code>.onion</code> site using just three commands. Unzip, change into the TorServ/ directory and run, it is that sinple. See the hopme page for an example.
+        This guide shows you how to go from zero to a live <code>.onion</code> site using just three commands. Unzip, change into the TorServ/ directory and run, it is that sinple. See the home page for an example.
       </p>
 
       <h3 style={styles.subheading}>🌐 Why Host on the Dark Web?</h3>
