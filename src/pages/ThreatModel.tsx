@@ -19,7 +19,7 @@ const ThreatModel = () => (
           <li><strong>Path Disclosure:</strong> Encrypted URLs prevent human-readable file names/paths from being exposed.</li>
           <li><strong>Header Fingerprinting:</strong> Server strips headers like <code>Date</code>, <code>ETag</code>, <code>User-Agent</code>.</li>
           <li><strong>Traffic Analysis Resistance:</strong> Adds timing jitter (50–200ms) and response padding to mask content size and access patterns.</li>
-          <li><strong>Bot Trap:</strong> Bots scanning for common directories such as admin/ or phpadmin/ will be fed a slow trickle of garbage instead of getting 404.</li>
+          <li><strong>Bot Trap:</strong> Scanning for non existent directories or files will be fed a slow trickle of garbage instead of getting 404.</li>
 
         </ul>
 
