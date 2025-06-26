@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import WhyTorServ from './pages/WhyTorServ';
 import HowToHost from './pages/HowToHost';
+import ThreatModel from './pages/ThreatModel'; // ✅ Import your new component
 
 import GitHubGrowthCard from './components/GitHubGrowthCard';
 import Footer from './components/Footer';
@@ -32,6 +33,7 @@ function App() {
           } />
           <Route path="/why-torserv" element={<WhyTorServ />} />
           <Route path="/howto-host" element={<HowToHost />} />
+          <Route path="/threat-model" element={<ThreatModel />} /> {/* ✅ Add this line */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

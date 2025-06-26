@@ -7,6 +7,8 @@ const Nav = () => (
     <Link to="/why-torserv" style={styles.link}>Why TorServ?</Link>
     <span style={styles.separator}>|</span>
     <Link to="/howto-host" style={styles.link}>How To</Link>
+    <span style={styles.separator}>|</span>
+    <Link to="/threat-model" style={styles.link}>Threat Model</Link>
   </nav>
 );
 
