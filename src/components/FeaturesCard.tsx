@@ -22,8 +22,14 @@ const featureGroups: { heading: string; items: Feature[] }[] = [
         title: 'Timing Attack Resistance',
         summary: 'Uniform response timing to resist leak-based attacks.',
         details: 'TorServ internally adds random delays and consistent response pacing to avoid timing patterns that could be used to link sessions or users.'
+      },
+      {
+        emoji: '🔒',
+        title: 'Firejail Sandboxing',
+        summary: 'Runs in a secure sandbox when Firejail is present.',
+        details: 'If Firejail is installed on the system, TorServ automatically launches inside a security sandbox that limits filesystem, network, and system access — adding a second layer of containment.'
       }
-    ],
+    ]
   },
   {
     heading: 'Usability',
