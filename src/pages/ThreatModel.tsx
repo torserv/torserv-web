@@ -20,7 +20,8 @@ const ThreatModel = () => (
           <li><strong>Header Fingerprinting:</strong> Server strips headers like <code>Date</code>, <code>ETag</code>, <code>User-Agent</code>.</li>
           <li><strong>Traffic Analysis Resistance:</strong> Adds timing jitter (50–200ms) and response padding to mask content size and access patterns.</li>
           <li><strong>Bot Trap:</strong> Scanning for non existent directories or files will be fed a slow trickle of garbage instead of getting 404.</li>
-          <li><strong>Fail Safe:</strong> Server won't run if dangerous file types are present in the public/ directory.</li>
+          <li><strong>Fail Safe:</strong> Server won't run if dangerous file types are present in the <code>public/</code> directory.</li>
+          <li><strong>Automatic Sandboxing:</strong> If Firejail is installed, TorServ will launch inside a lightweight sandbox. Use <code>--no-firejail</code> to disable.</li>
         </ul>
 
         <p style={styles.paragraph}>
