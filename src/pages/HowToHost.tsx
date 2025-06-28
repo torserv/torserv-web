@@ -1,12 +1,15 @@
 import TorServStructuredData from '../components/TorServStructuredData';
+import MirrorBadge from '../components/MirrorBadge';
 
 const HowToHost = () => (
 <>        
   <TorServStructuredData />
   <section style={styles.card}>
     <div style={styles.content}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
       <h2 style={styles.heading}>⚡ Host a Static Website on the Dark Web in Under 1 Minute</h2>
-
+      <MirrorBadge />
+    </div>
       <p style={styles.paragraph}>
         Hosting a Tor hidden service — also known as an <strong>onion site</strong> — usually requires deep technical knowledge. But with <strong>TorServ</strong>, you can launch a fully anonymous, censorship-resistant website in seconds.
       </p>

@@ -1,11 +1,15 @@
 import TorServStructuredData from '../components/TorServStructuredData';
+import MirrorBadge from '../components/MirrorBadge';
 
 const WhyTorServ = () => (
 <>
   <TorServStructuredData />
   <section style={styles.card}>
     <div style={styles.content}>
-      <h2 style={styles.heading}>🛠️ Why I Built TorServ</h2>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <h2 style={styles.heading}>🛠️ Why I Built TorServ</h2>
+        <MirrorBadge />
+      </div>
 
       <p style={styles.paragraph}><strong>TorServ</strong> was built because I couldn’t believe it didn’t already exist.</p>
 

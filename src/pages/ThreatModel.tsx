@@ -1,12 +1,15 @@
 import TorServStructuredData from '../components/TorServStructuredData';
+import MirrorBadge from '../components/MirrorBadge';
 
 const ThreatModel = () => (
   <>
     <TorServStructuredData />
     <section style={styles.card}>
       <div style={styles.content}>
-        <h2 style={styles.heading}>🛡️ Threat Model: What TorServ Protects (and Doesn’t)</h2>
-
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <h2 style={styles.heading}>🛡️ Threat Model: What TorServ Protects (and Doesn’t)</h2>
+          <MirrorBadge />
+        </div>
         <p style={styles.paragraph}>
           TorServ is built for environments where privacy is not just important — it’s essential. This page outlines the tool’s threat model: what it protects against, what it doesn’t, and how to use it safely.
         </p>
