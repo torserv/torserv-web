@@ -28,7 +28,7 @@ const Footer = () => {
           </a>
         </div>
         <div style={styles.onion}>
-          Tor mirror: <code>http://inacxweo5cotzc6mshwq52eul4327ac64xz5q5s4bml62txqot727oyd.onion</code>
+          Tor mirror: <code>http://torservqv27yflqzhe75mojvxp364rfhqjobkte4q5v2u2jjuokchoid.onion</code>
         </div>
       </div>
     </footer>
