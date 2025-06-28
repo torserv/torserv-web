@@ -1,7 +1,12 @@
 const Footer = () => {
   return (
     <footer style={styles.footer}>
-      <div style={styles.left}>© 2025 TorServ</div>
+      <div style={styles.left}>
+        © 2025 TorServ
+        <div style={{ fontSize: '0.85em', color: '#aaa', marginTop: '0.3rem' }}>
+          This site is a React app served by NGINX, not by the TorServ binary.
+        </div>
+      </div>
       <div style={styles.right}>
         <div style={styles.links}>
           <a
