@@ -21,7 +21,7 @@ Built with React + Vite. Hosted at [https://torserv.org](https://torserv.org).
 
 TorServe.org is accessible via the Tor network:
 
-**→ inacxweo5cotzc6mshwq52eul4327ac64xz5q5s4bml62txqot727oyd.onion**
+**torservqv27yflqzhe75mojvxp364rfhqjobkte4q5v2u2jjuokchoid.onion**
 
 Copy and paste into the [Tor Browser](https://www.torproject.org/) to visit.
 
