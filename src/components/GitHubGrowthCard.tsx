@@ -78,10 +78,10 @@ const GitHubGrowthCard = () => {
           <span>📈 ~{stats.starsPerDay} stars/day</span>
           <span>👥 Contributors: {stats.contributors.length}</span>
           <span>
-            🏷️ <img src="https://img.shields.io/github/v/release/torserv/torserv?style=flat-square" alt="Version" />
+            🏷️ <img src="https://img.shields.io/github/v/release/torserv/torserv?style=flat-square" alt="Version" style={{ height: '24px' }} />
           </span>
           <span>
-            📥 <img src="https://img.shields.io/github/downloads/torserv/torserv/total?style=flat-square" alt="Downloads" />
+            📥 <img src="https://img.shields.io/github/downloads/torserv/torserv/total?style=flat-square" alt="Downloads" style={{ height: '24px' }} />
           </span>
         </div>
       ) : (
