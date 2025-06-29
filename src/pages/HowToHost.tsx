@@ -78,7 +78,7 @@ const HowToHost = () => (
         <li>Encrypted filenames and obfuscated URLs</li>
         <li>Response padding to resist traffic analysis</li>
         <li>Timing jitter to confuse fingerprinting</li>
-        <li>JPEG/PNG/GIF/WEBP metadata scrubbing</li>
+        <li>JPEG/PNG/GIF/BMP metadata scrubbing</li>
         <li>No caching, logging, or outbound calls</li>
       </ul>
 

@@ -18,7 +18,7 @@ const ThreatModel = () => (
         <ul style={styles.list}>
           <li><strong>IP Exposure:</strong> TorServ binds only to <code>127.0.0.1</code>, never to a public network interface.</li>
           <li><strong>Clearnet Leaks:</strong> No outbound connections. No analytics. No third-party scripts or assets.</li>
-          <li><strong>Metadata Leakage:</strong> JPEG, PNG, GIF, BMP, and WebP metadata is scrubbed before delivery.</li>
+          <li><strong>Metadata Leakage:</strong> JPEG, PNG, GIF and BMP metadata is scrubbed before delivery.</li>
           <li><strong>Path Disclosure:</strong> Encrypted URLs prevent human-readable file names/paths from being exposed.</li>
           <li><strong>Header Fingerprinting:</strong> Server strips headers like <code>Date</code>, <code>ETag</code>, <code>User-Agent</code>.</li>
           <li><strong>Traffic Analysis Resistance:</strong> Adds timing jitter (50–200ms) and response padding to mask content size and access patterns.</li>
