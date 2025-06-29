@@ -1,26 +1,33 @@
+import React from 'react';
+
 const TorServStructuredData = () => {
-  const data = {
+  const structuredData = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "TorServ",
-    operatingSystem: "Linux",
-    applicationCategory: "SecurityApplication",
-    description: "Launch an anonymous Tor hidden service in seconds using TorServ. No configuration needed.",
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-      availability: "https://schema.org/InStock"
+    "name": "TorServ",
+    "description": "Zero-config static web server that launches over Tor as a hidden service.",
+    "url": "https://torserv.org/",
+    "image": "https://torserv.org/onion1200x630.png",
+    "operatingSystem": "Linux, RPI",
+    "applicationCategory": "DeveloperTool",
+    "creator": {
+      "@type": "Organization",
+      "name": "TorServ Project",
+      "url": "https://torserv.org/",
+      "logo": "https://torserv.org/onion1200x630.png",
+      "sameAs": ["https://github.com/torserv/torserv"]
     },
-    url: "https://github.com/torserv/torserv",
-    softwareVersion: "1.0",
-    license: "https://opensource.org/licenses/MIT"
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
   };
 
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
     />
   );
 };
