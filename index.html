@@ -1,46 +1,55 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="preload" href="/fonts/roboto-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="icon" type="image/png" href="/onion-small.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TorServ – Unzip → Run → Vanish</title>
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Host a secure, anonymous Tor hidden service in seconds. TorServ is a zero-config static web server built for censorship resistance and privacy." />
-    <meta name="robots" content="index, follow" />
+    <!-- Primary Meta Tags -->
+    <title>TorServ – Zero-config static Tor web server</title>
+    <meta name="title" content="TorServ – Zero-config static Tor web server" />
+    <meta name="description" content="Unzip and run your own Tor hidden service. No setup. No logs. No clearnet." />
+    <meta name="author" content="TorServ" />
     <link rel="canonical" href="https://torserv.org/" />
 
-    <!-- Open Graph (for social/link previews) -->
-    <meta property="og:title" content="TorServ – Unzip → Run → Vanish" />
-    <meta property="og:description" content="Host a secure, anonymous Tor hidden service in seconds. TorServ is a zero-config static web server built for censorship resistance and privacy." />
-    <meta property="og:url" content="https://torserv.org/" />
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://torserv.org/onion1200x630.png">
+    <meta property="og:url" content="https://torserv.org/" />
+    <meta property="og:title" content="TorServ – Zero-config static Tor web server" />
+    <meta property="og:description" content="Unzip and run your own Tor hidden service. No setup. No logs. No clearnet." />
+    <meta property="og:image" content="https://torserv.org/onion1200x630.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
-    <!-- Twitter Card -->
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="TorServ – Unzip → Run → Vanish" />
-    <meta name="twitter:description" content="Host a secure, anonymous Tor hidden service in seconds. TorServ is a zero-config static web server built for censorship resistance and privacy." />
-    <meta name="twitter:image" content="https://torserv.org/onion1200x630.png">
-    <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "TorServ",
-    "url": "https://torserv.org",
-    "applicationCategory": "DeveloperTool",
-    "operatingSystem": "Linux",
-    "license": "https://github.com/torserv/torserv/blob/main/LICENSE",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    }
-}
-</script>
+    <meta name="twitter:title" content="TorServ – Zero-config static Tor web server" />
+    <meta name="twitter:description" content="Unzip and run your own Tor hidden service. No setup. No logs. No clearnet." />
+    <meta name="twitter:image" content="https://torserv.org/onion1200x630.png" />
+    <meta name="twitter:image:type" content="image/png" />
 
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "TorServ",
+      "description": "Zero-config static web server that launches over Tor as a hidden service.",
+      "url": "https://torserv.org/",
+      "image": "https://torserv.org/onion1200x630.png",
+      "operatingSystem": "Linux, RPI",
+      "applicationCategory": "DeveloperTool",
+      "creator": {
+        "@type": "Organization",
+        "name": "TorServ Project",
+        "url": "https://torserv.org/",
+        "logo": "https://torserv.org/onion1200x630.png",
+        "sameAs": ["https://github.com/torserv/torserv"]
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
