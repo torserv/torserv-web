@@ -1,5 +1,3 @@
-import React from 'react';
-
 const TorServStructuredData = () => {
   const structuredData = {
     "@context": "https://schema.org",
