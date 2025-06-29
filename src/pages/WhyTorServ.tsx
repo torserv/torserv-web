@@ -49,9 +49,11 @@ const WhyTorServ = () => (
 
       <ul style={styles.list}>
         <li>Fingerprint and timing attack resistance</li>
-        <li>Encrypted filenames in the HTML</li>
+        <li>Encrypted filenames and paths in the HTML that is served</li>
         <li>Response padding and header sanitization</li>
+        <li>Protection from serving dangerous files and metadata scrubbing for images</li>
         <li>No JS, no tracking, no outbound traffic — ever</li>
+        <li>Can run in a light weight sandbox if firejail is installed (optional)</li>
       </ul>
 
       <p style={styles.paragraph}>
