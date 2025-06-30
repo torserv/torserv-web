@@ -1,0 +1,12 @@
+{
+  "name": "TorServ",
+  "onion": "torservqv27yflqzhe75mojvxp364rfhqjobkte4q5v2u2jjuokchoid.onion",
+  "clearnet": "https://torserv.org",
+  "canonical": true,
+  "description": "Zero-config static Tor web server. Unzip and run. No clearnet. No logs.",
+  "software": "Vite static app + Go backend",
+  "author": "TorServ Project",
+  "source": "https://github.com/torserv/torserv",
+  "license": "MIT",
+  "comment": "Official Tor hidden service mirror for TorServ. This site is identical to the clearnet version."
+}
