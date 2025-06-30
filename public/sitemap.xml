@@ -4,4 +4,16 @@
     <loc>https://torserv.org/</loc>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://torserv.org/why-torserv</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://torserv.org/howto-host</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://torserv.org/threat-model</loc>
+    <priority>0.7</priority>
+  </url>
 </urlset>
