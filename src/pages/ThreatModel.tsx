@@ -11,7 +11,7 @@ const ThreatModel = () => (
           <MirrorBadge />
         </div>
         <p style={styles.paragraph}>
-          TorServ is built for environments where privacy is not just important — it’s essential. This page outlines the tool’s threat model: what it protects against, what it doesn’t, and how to use it safely.
+          TorServ is built for environments where privacy is not just important — it’s essential. This page outlines the tool’s threat model: what it protects against, what it doesn’t, and how to use it safely. As a zero-configuration Tor web server, TorServ enables static site hosting with maximum anonymity and zero setup.
         </p>
 
         <h3 style={styles.subheading}>✅ What TorServ Defends Against</h3>
