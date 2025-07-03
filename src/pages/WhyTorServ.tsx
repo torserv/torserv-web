@@ -14,7 +14,7 @@ const WhyTorServ = () => (
       <p style={styles.paragraph}><strong>TorServ</strong> was built because I couldn’t believe it didn’t already exist.</p>
 
       <p style={styles.paragraph}>
-        I wanted to self-host a basic website — anonymously, as a Tor hidden service — and I assumed there would be a dead-simple tool for that. Something where you unzip, run, and instantly get a .onion address without configuring a web server, opening ports, or writing a torrc file.
+        I wanted to self-host a basic static website — anonymously, as a Tor hidden service — and I assumed there would be a dead-simple tool for that. Something where you unzip, run, and instantly get a .onion address without configuring a web server, opening ports, or writing a torrc file.
       </p>
 
       <p style={styles.paragraph}>
