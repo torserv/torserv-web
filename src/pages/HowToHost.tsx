@@ -4,118 +4,127 @@ import MirrorBadge from '../components/MirrorBadge';
 const HowToHost = () => (
 <>        
   <TorServStructuredData />
-  <section style={styles.card}>
-    <div style={styles.content}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+ <section style={styles.card}>
+  <div style={styles.content}>
+    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
       <h2 style={styles.heading}>⚡ Host a Static Website on the Dark Web in Under 1 Minute</h2>
       <MirrorBadge />
     </div>
-      <p style={styles.paragraph}>
-        Hosting a Tor hidden service — also known as an <strong>onion site</strong> — usually requires deep technical knowledge. But with <strong>TorServ</strong>, you can launch a fully anonymous, censorship-resistant website in seconds.
-      </p>
 
-      <p style={styles.paragraph}>
-        This guide shows you how to go from zero to a live <code>.onion</code> site using just three commands. Unzip, change into the TorServ/ directory and run, it is that sinple. See the home page for an example.
-      </p>
+    <p style={styles.paragraph}>
+      Hosting a <strong>Tor hidden service</strong> — also known as an <strong>onion site</strong> — typically requires in-depth technical skills and manual configuration. With <strong>TorServ</strong>, you can <strong>host a static website anonymously</strong> in seconds, without touching any config files.
+    </p>
 
-      <h3 style={styles.subheading}>🌐 Why Host on the Dark Web?</h3>
+    <p style={styles.paragraph}>
+      This guide shows how to go from zero to a live <code>.onion</code> site using just three commands. Unzip, change into the <code>TorServ/</code> directory, and run. That’s it. For an example, visit our home page.
+    </p>
 
-      <p style={styles.paragraph}>Tor hidden services offer powerful advantages for people who need privacy and stealth:</p>
+    <h3 style={styles.subheading}>🌐 Why Host a Site on the Dark Web?</h3>
 
-      <ul style={styles.list}>
-        <li>Protect against surveillance and censorship</li>
-        <li>Publish content anonymously</li>
-        <li>Access websites without revealing your location or identity</li>
-      </ul>
+    <p style={styles.paragraph}>
+      <strong>Hosting a website on Tor</strong> allows you to resist censorship, avoid surveillance, and share information without revealing your identity.
+    </p>
 
-      <p style={styles.paragraph}>
-        These benefits matter not just to privacy advocates, but also to journalists, activists, whistleblowers, and anyone living under authoritarian regimes.
-      </p>
+    <ul style={styles.list}>
+      <li>Publish content privately and anonymously</li>
+      <li>Bypass national firewalls and filtering</li>
+      <li>Stay invisible to search engines and third parties</li>
+    </ul>
 
-      <h3 style={styles.subheading}>🧰 The Traditional Way: Manual Tor Configuration</h3>
+    <p style={styles.paragraph}>
+      These features make .onion hosting essential for journalists, activists, whistleblowers, and individuals in authoritarian regimes.
+    </p>
 
-      <p style={styles.paragraph}>To set up a Tor hidden service the usual way, you’d typically need to:</p>
+    <h3 style={styles.subheading}>🧰 The Traditional Approach to Onion Hosting</h3>
 
-      <ul style={styles.list}>
-        <li>Install and configure the Tor daemon</li>
-        <li>Write a <code>torrc</code> file to define the service</li>
-        <li>Setup and run a web server like nginx or Apache</li>
-        <li>Ensure the server isn't leaking critical metadata</li>
-        <li>Identify and mitigate attack surfaces</li>
-        <li>Expose local ports correctly</li>
-      </ul>
+    <p style={styles.paragraph}>Normally, creating a Tor hidden service involves:</p>
 
-      <p style={styles.paragraph}>For most people — even experienced sysadmins — this is a slow, tedious process and mistakes are very easy to make, or attack vectors easy to overlook.</p>
+    <ul style={styles.list}>
+      <li>Installing and configuring the Tor daemon</li>
+      <li>Writing a <code>torrc</code> file with service definitions</li>
+      <li>Deploying a web server like nginx or Apache</li>
+      <li>Auditing for data leaks and fingerprinting vectors</li>
+      <li>Securing exposed ports and metadata</li>
+    </ul>
 
-      <h3 style={styles.subheading}>🚀 The Simple Way: TorServ</h3>
+    <p style={styles.paragraph}>It’s tedious, error-prone, and difficult to maintain securely — especially for non-experts.</p>
 
-      <p style={styles.paragraph}><strong>TorServ</strong> removes all the complexity. You just unzip it and run:</p>
+    <h3 style={styles.subheading}>🚀 A Better Way: TorServ</h3>
 
-      <pre><code>./torserv</code></pre>
+    <p style={styles.paragraph}>
+      <strong>TorServ</strong> makes <strong>anonymous static site hosting</strong> as easy as:
+    </p>
 
-      <p style={styles.paragraph}>
-        Within seconds, a Tor hidden service is generated and the <code>.onion</code> address is printed to your terminal. That’s it — your anonymous website is live.
-      </p>
+    <pre><code>./torserv</code></pre>
 
-      <p style={styles.paragraph}>No configuration. No clearnet exposure. No system dependencies.</p>
+    <p style={styles.paragraph}>
+      The server prints your new <code>.onion</code> address and serves content instantly. No clearnet exposure, no setup, no dependencies.
+    </p>
 
-      <h3 style={styles.subheading}>🔍 Behind the Scenes: How It Works</h3>
+    <h3 style={styles.subheading}>🔍 What’s Under the Hood?</h3>
 
-      <p style={styles.paragraph}>
-        TorServ bundles the Tor binary internally and binds only to <code>127.0.0.1</code>. It serves static files from the local directory and launches a self-contained hidden service using raw TCP.
-      </p>
+    <p style={styles.paragraph}>
+      TorServ bundles the Tor binary, binds to <code>127.0.0.1</code>, and serves static content from the local directory. It creates a self-contained hidden service via raw TCP.
+    </p>
 
-      <p style={styles.paragraph}>
-        It’s built in Go and supports Linux (x64) and Raspberry Pi (ARM). There’s no JavaScript, no tracking, and no outbound traffic of any kind.
-      </p>
+    <p style={styles.paragraph}>
+      Written in Go, TorServ supports Linux (x64) and Raspberry Pi (ARM). No tracking, no JavaScript, no network calls.
+    </p>
 
-      <h3 style={styles.subheading}>🛡️ Security Features by Default</h3>
+    <h3 style={styles.subheading}>🛡️ Built-In Security Features</h3>
 
-      <p style={styles.paragraph}>TorServ is designed for hostile environments where compromise is assumed. Key features include:</p>
+    <p style={styles.paragraph}>
+      Designed for hostile networks and surveillance-heavy environments, TorServ includes:
+    </p>
 
-      <ul style={styles.list}>
-        <li>Header sanitization (removes identifying metadata)</li>
-        <li>Encrypted filenames and obfuscated URLs</li>
-        <li>Response padding to resist traffic analysis</li>
-        <li>Timing jitter to confuse fingerprinting</li>
-        <li>JPEG/PNG/GIF/BMP metadata scrubbing</li>
-        <li>No caching, logging, or outbound calls</li>
-      </ul>
+    <ul style={styles.list}>
+      <li>Header sanitization and metadata stripping</li>
+      <li>Encrypted and obfuscated URLs</li>
+      <li>Traffic padding and randomized response timing</li>
+      <li>Auto-scrubbing for JPEG, PNG, GIF, and BMP metadata</li>
+      <li>No logging, no caching, no third-party contact</li>
+    </ul>
 
-      <p style={styles.paragraph}>
-        Even the default landing page is multilingual — with safety tips for TorServ users.
-      </p>
+    <p style={styles.paragraph}>
+      The default landing page is multilingual and includes safety tips for first-time Tor users.
+    </p>
 
-      <h3 style={styles.subheading}>🧪 Try TorServ Today</h3>
+    <h3 style={styles.subheading}>🧪 Try TorServ</h3>
 
-      <p style={styles.paragraph}>You can download TorServ directly from GitHub and get started immediately:</p>
+    <p style={styles.paragraph}>
+      Download TorServ from GitHub and <strong>host your own Tor site</strong> today:
+    </p>
 
-      <p style={styles.paragraph}>
-        <a href="https://github.com/torserv/torserv" style={styles.link}>https://github.com/torserv/torserv</a>
-      </p>
+    <p style={styles.paragraph}>
+      <a href="https://github.com/torserv/torserv" style={styles.link}>https://github.com/torserv/torserv</a>
+    </p>
 
-      <p style={styles.paragraph}>
-        Installation requires no root access, no config files, and no clearnet interface. It’s the easiest way to host an anonymous Tor site, securely and privately.
-      </p>
+    <p style={styles.paragraph}>
+      No root required. No clearnet interface. No setup headaches. Just anonymous hosting that works.
+    </p>
 
-      <h3 style={styles.subheading}>🤝 Want to Contribute?</h3>
+    <h3 style={styles.subheading}>🤝 Want to Contribute?</h3>
 
-      <p style={styles.paragraph}>TorServ is open source under the MIT License. The project welcomes:</p>
+    <p style={styles.paragraph}>
+      TorServ is MIT-licensed and open to collaboration. You can help by:
+    </p>
 
-      <ul style={styles.list}>
-        <li>Security audits</li>
-        <li>Bug reports</li>
-        <li>Feature suggestions</li>
-        <li>Language translations</li>
-        <li>Financical support (This project incurs costs monthly to run)</li>
+    <ul style={styles.list}>
+      <li>Performing security audits</li>
+      <li>Reporting bugs</li>
+      <li>Suggesting new features</li>
+      <li>Translating the landing page</li>
+      <li>Supporting the project financially (to cover server and hosting costs)</li>
+    </ul>
 
-      </ul>
+    <p style={styles.paragraph}>
+      Every bit of help brings privacy-preserving hosting to more people.
+    </p>
 
-      <p style={styles.paragraph}>Your feedback and collaboration will help make TorServ safer and more accessible to everyone.</p>
+    <p style={styles.paragraph}>— The TorServ Project</p>
+  </div>
+</section>
 
-      <p style={styles.paragraph}>— The TorServ Project</p>
-    </div>
-  </section>
 </>
 );
 
